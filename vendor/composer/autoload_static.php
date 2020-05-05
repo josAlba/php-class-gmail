@@ -22,6 +22,10 @@ class ComposerStaticInit1a7fe67718db6c2b95a9a8fde4937e2b
         array (
             'phpseclib\\' => 10,
         ),
+        'W' => 
+        array (
+            'Workerman\\' => 10,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
@@ -55,6 +59,10 @@ class ComposerStaticInit1a7fe67718db6c2b95a9a8fde4937e2b
         'phpseclib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'Workerman\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/workerman/workerman',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (

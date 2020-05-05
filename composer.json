@@ -1,6 +1,7 @@
 {
     "name": "josalba/php-gmail",
     "require": {
-        "google/apiclient": "^2.0"
+        "google/apiclient": "^2.0",
+        "workerman/workerman": "^4.0"
     }
 }
