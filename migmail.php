@@ -94,6 +94,7 @@ class MiGmail{
                 }
             }
             
+            $mail->isHTML(true);
             $mail->Subject  = $asunto;
             $mail->Body     = $cuerpo;
 
