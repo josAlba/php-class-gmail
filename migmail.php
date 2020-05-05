@@ -158,9 +158,16 @@ class MiGmail{
         }
 
         echo "\n Enviando a ".$email;
+        $this->sendlog($email,$post['d']);
 
         return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre);
 
     }
+
+    private function sendlog($mail,$desde){
+        $ddf = fopen('send.log','a');
+        fwrite($ddf,"[".date("r")."] Enviado mail de $desde a $mail\r\n");
+        fclose($ddf);
+    } 
 
 }
