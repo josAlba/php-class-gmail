@@ -1,0 +1,6 @@
+{
+    "name": "josalba/php-gmail",
+    "require": {
+        "google/apiclient": "^2.0"
+    }
+}
