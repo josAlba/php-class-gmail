@@ -72,3 +72,30 @@ Para reiniciar el servicio.
 php _server.php restart
 
 ```
+
+## Lanzar peticion
+
+Peticion para ver el servidor
+```
+curl 10.0.0.189:8020
+```
+
+Peticion para enviar un mail
+```
+curl -d "a=prueba&b=<h1>hola</h1>&e={tu mail}&d={email destinatario}&n=yo&user={nombre credencial}" 10.0.0.189:8020?send=1
+```
+
+Hay que pasar "send" por GET y el contenido del correo por POST
+
+### Parametros
+
+#### POST
+- a = Asunto
+- b = Cuerpo
+- e = Email
+- d = Destinatario ( se puede añadir más de uno separandolos por , )
+- c = Emails en copia ( se puede añadir más de uno separandolos por , )
+- n = Nombre
+
+#### GET
+- send = Indica que es un mail
