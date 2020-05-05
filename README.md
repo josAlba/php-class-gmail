@@ -10,6 +10,19 @@ mkdir credenciales
 mkdir tokens
 ```
 
+## Configurar el servidor
+
+Modificar conf.json asignando la ip local y el puerto que quereis usar.
+
+```
+{
+    "ip": "10.0.3.247",
+    "puerto": "8020",
+    "hilos": 4
+}
+
+```
+
 ## Crear credenciales
 
 > https://developers.google.com/gmail/api/quickstart/php
