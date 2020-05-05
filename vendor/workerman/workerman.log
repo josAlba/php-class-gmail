@@ -1,0 +1,241 @@
+2020-05-05 09:47:35 pid:683331 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:49:37 pid:683331 Workerman[_server.php] stopping ...
+2020-05-05 09:49:37 pid:683331 Workerman[_server.php] has been stopped
+2020-05-05 09:49:38 pid:683429 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:49:40 pid:683429 Workerman[_server.php] stopping ...
+2020-05-05 09:49:40 pid:683429 Workerman[_server.php] has been stopped
+2020-05-05 09:49:41 pid:683435 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:50:58 pid:683435 Workerman[_server.php] stopping ...
+2020-05-05 09:50:58 pid:683435 Workerman[_server.php] has been stopped
+2020-05-05 09:51:02 pid:683679 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:51:30 pid:683679 Workerman[_server.php] stopping ...
+2020-05-05 09:51:30 pid:683679 Workerman[_server.php] has been stopped
+2020-05-05 09:52:49 pid:684035 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:52:54 pid:684038 Error: Call to undefined method Workerman\Protocols\Http::header() in /home/jos/GIT2/php-class-gmail/_server.php:16
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#1 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#7 /home/jos/GIT2/php-class-gmail/_server.php(81): Workerman\Worker::runAll()
+#8 {main}
+2020-05-05 09:52:54 pid:684038 Worker[684038] process terminated
+2020-05-05 09:52:54 pid:684035 worker[none:684038] exit with status 64000
+2020-05-05 09:53:36 pid:684035 Workerman[_server.php] stopping ...
+2020-05-05 09:53:36 pid:684035 Workerman[_server.php] has been stopped
+2020-05-05 09:53:38 pid:684160 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:53:40 pid:684163 Error: Call to undefined method Workerman\Protocols\Http::header() in /home/jos/GIT2/php-class-gmail/_server.php:16
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#1 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#7 /home/jos/GIT2/php-class-gmail/_server.php(83): Workerman\Worker::runAll()
+#8 {main}
+2020-05-05 09:53:40 pid:684163 Worker[684163] process terminated
+2020-05-05 09:53:40 pid:684160 worker[none:684163] exit with status 64000
+2020-05-05 09:54:13 pid:684160 Workerman[_server.php] stopping ...
+2020-05-05 09:54:13 pid:684160 Workerman[_server.php] has been stopped
+2020-05-05 09:54:17 pid:684329 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:54:20 pid:684333 Error: Call to undefined method Workerman\Protocols\Http::header() in /home/jos/GIT2/php-class-gmail/_server.php:16
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#1 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#7 /home/jos/GIT2/php-class-gmail/_server.php(81): Workerman\Worker::runAll()
+#8 {main}
+2020-05-05 09:54:20 pid:684333 Worker[684333] process terminated
+2020-05-05 09:54:20 pid:684329 worker[none:684333] exit with status 64000
+2020-05-05 09:56:33 pid:684329 Workerman[_server.php] stopping ...
+2020-05-05 09:56:33 pid:684329 Workerman[_server.php] has been stopped
+2020-05-05 09:56:36 pid:684894 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:56:42 pid:684898 Error: Call to undefined method Workerman\Protocols\Http::header() in /home/jos/GIT2/php-class-gmail/_server.php:18
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#1 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#7 /home/jos/GIT2/php-class-gmail/_server.php(82): Workerman\Worker::runAll()
+#8 {main}
+2020-05-05 09:56:42 pid:684898 Worker[684898] process terminated
+2020-05-05 09:56:42 pid:684894 worker[none:684898] exit with status 64000
+2020-05-05 09:58:08 pid:684894 Workerman[_server.php] stopping ...
+2020-05-05 09:58:08 pid:684894 Workerman[_server.php] has been stopped
+2020-05-05 09:58:10 pid:685105 Workerman[_server.php] start in DEBUG mode
+2020-05-05 09:58:15 pid:685108 Error: Call to undefined method Workerman\Protocols\Http::header() in /home/jos/GIT2/php-class-gmail/_server.php:16
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#1 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#7 /home/jos/GIT2/php-class-gmail/_server.php(82): Workerman\Worker::runAll()
+#8 {main}
+2020-05-05 09:58:15 pid:685108 Worker[685108] process terminated
+2020-05-05 09:58:15 pid:685105 worker[none:685108] exit with status 64000
+2020-05-05 09:59:46 pid:685105 Workerman[_server.php] stopping ...
+2020-05-05 09:59:46 pid:685105 Workerman[_server.php] has been stopped
+2020-05-05 09:59:48 pid:685382 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:00:21 pid:685382 Workerman[_server.php] stopping ...
+2020-05-05 10:00:21 pid:685382 Workerman[_server.php] has been stopped
+2020-05-05 10:00:22 pid:685563 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:00:46 pid:685563 Workerman[_server.php] stopping ...
+2020-05-05 10:00:46 pid:685563 Workerman[_server.php] has been stopped
+2020-05-05 10:00:48 pid:685644 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:06:13 pid:685644 Workerman[_server.php] stopping ...
+2020-05-05 10:06:13 pid:685644 Workerman[_server.php] has been stopped
+2020-05-05 10:06:16 pid:686841 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:06:43 pid:686843 Error: Class 'PHPMailer' not found in /home/jos/GIT2/php-class-gmail/migmail.php:83
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(155): MiGmail->sendMail()
+#1 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#9 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#10 {main}
+2020-05-05 10:06:43 pid:686843 Worker[686843] process terminated
+2020-05-05 10:06:43 pid:686841 worker[none:686843] exit with status 64000
+2020-05-05 10:07:07 pid:686841 Workerman[_server.php] stopping ...
+2020-05-05 10:07:07 pid:686841 Workerman[_server.php] has been stopped
+2020-05-05 10:07:09 pid:686972 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:07:11 pid:686973 Error: Class 'PHPMailer' not found in /home/jos/GIT2/php-class-gmail/migmail.php:83
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(155): MiGmail->sendMail()
+#1 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#2 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#3 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#9 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#10 {main}
+2020-05-05 10:07:11 pid:686973 Worker[686973] process terminated
+2020-05-05 10:07:11 pid:686972 worker[none:686973] exit with status 64000
+2020-05-05 10:08:20 pid:686972 Workerman[_server.php] stopping ...
+2020-05-05 10:08:20 pid:686972 Workerman[_server.php] has been stopped
+2020-05-05 10:08:22 pid:687179 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:13:45 pid:687181 InvalidArgumentException: file "/home/jos/GIT2/php-class-gmail/credenciales/credentials.json" does not exist in /home/jos/GIT2/php-class-gmail/vendor/google/apiclient/src/Google/Client.php:904
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(32): Google_Client->setAuthConfig()
+#1 /home/jos/GIT2/php-class-gmail/migmail.php(78): MiGmail->getClient()
+#2 /home/jos/GIT2/php-class-gmail/migmail.php(161): MiGmail->sendMail()
+#3 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#10 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#11 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#12 {main}
+2020-05-05 10:13:45 pid:687181 Worker[687181] process terminated
+2020-05-05 10:13:45 pid:687179 worker[none:687181] exit with status 64000
+2020-05-05 10:13:54 pid:687704 InvalidArgumentException: file "/home/jos/GIT2/php-class-gmail/credenciales/credentials.json" does not exist in /home/jos/GIT2/php-class-gmail/vendor/google/apiclient/src/Google/Client.php:904
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(32): Google_Client->setAuthConfig()
+#1 /home/jos/GIT2/php-class-gmail/migmail.php(78): MiGmail->getClient()
+#2 /home/jos/GIT2/php-class-gmail/migmail.php(161): MiGmail->sendMail()
+#3 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#10 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1675): Workerman\Worker::forkWorkers()
+#11 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1624): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(548): Workerman\Worker::monitorWorkers()
+#13 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#14 {main}
+2020-05-05 10:13:54 pid:687704 Worker[687704] process terminated
+2020-05-05 10:13:54 pid:687179 worker[none:687704] exit with status 64000
+2020-05-05 10:14:00 pid:687179 Workerman[_server.php] stopping ...
+2020-05-05 10:14:00 pid:687179 Workerman[_server.php] has been stopped
+2020-05-05 10:14:03 pid:687771 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:14:07 pid:687775 InvalidArgumentException: file "/home/jos/GIT2/php-class-gmail/credenciales/credentials.json" does not exist in /home/jos/GIT2/php-class-gmail/vendor/google/apiclient/src/Google/Client.php:904
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(32): Google_Client->setAuthConfig()
+#1 /home/jos/GIT2/php-class-gmail/migmail.php(78): MiGmail->getClient()
+#2 /home/jos/GIT2/php-class-gmail/migmail.php(161): MiGmail->sendMail()
+#3 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#10 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#11 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#12 {main}
+2020-05-05 10:14:07 pid:687775 Worker[687775] process terminated
+2020-05-05 10:14:07 pid:687771 worker[none:687775] exit with status 64000
+2020-05-05 10:15:01 pid:687771 Workerman[_server.php] stopping ...
+2020-05-05 10:15:01 pid:687771 Workerman[_server.php] has been stopped
+2020-05-05 10:15:02 pid:688090 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:15:07 pid:688093 InvalidArgumentException: file "/home/jos/GIT2/php-class-gmail/credenciales/credentials.json" does not exist in /home/jos/GIT2/php-class-gmail/vendor/google/apiclient/src/Google/Client.php:904
+Stack trace:
+#0 /home/jos/GIT2/php-class-gmail/migmail.php(32): Google_Client->setAuthConfig()
+#1 /home/jos/GIT2/php-class-gmail/migmail.php(78): MiGmail->getClient()
+#2 /home/jos/GIT2/php-class-gmail/migmail.php(161): MiGmail->sendMail()
+#3 /home/jos/GIT2/php-class-gmail/_server.php(34): MiGmail->validateANDsend()
+#4 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}()
+#5 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead()
+#6 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#7 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#8 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#10 /home/jos/GIT2/php-class-gmail/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#11 /home/jos/GIT2/php-class-gmail/_server.php(47): Workerman\Worker::runAll()
+#12 {main}
+2020-05-05 10:15:07 pid:688093 Worker[688093] process terminated
+2020-05-05 10:15:07 pid:688090 worker[none:688093] exit with status 64000
+2020-05-05 10:15:46 pid:688090 Workerman[_server.php] stopping ...
+2020-05-05 10:15:46 pid:688090 Workerman[_server.php] has been stopped
+2020-05-05 10:15:48 pid:688231 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:15:52 pid:688233 Worker[688233] process terminated
+2020-05-05 10:15:58 pid:688231 Workerman[_server.php] stopping ...
+2020-05-05 10:15:58 pid:688231 Workerman[_server.php] has been stopped
+2020-05-05 10:16:33 pid:688334 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:16:34 pid:688337 Worker[688337] process terminated
+2020-05-05 10:16:42 pid:688334 Workerman[_server.php] stopping ...
+2020-05-05 10:16:42 pid:688334 Workerman[_server.php] has been stopped
+2020-05-05 10:17:01 pid:688381 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:17:03 pid:688385 Worker[688385] process terminated
+2020-05-05 10:17:24 pid:688381 Workerman[_server.php] stopping ...
+2020-05-05 10:17:24 pid:688381 Workerman[_server.php] has been stopped
+2020-05-05 10:17:25 pid:688483 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:17:28 pid:688486 Worker[688486] process terminated
+2020-05-05 10:18:29 pid:688487 Worker[688487] process terminated
+2020-05-05 10:18:35 pid:688483 Workerman[_server.php] stopping ...
+2020-05-05 10:18:35 pid:688483 Workerman[_server.php] has been stopped
+2020-05-05 10:18:37 pid:688680 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:18:40 pid:688681 Worker[688681] process terminated
+2020-05-05 10:18:44 pid:688680 Workerman[_server.php] stopping ...
+2020-05-05 10:18:44 pid:688680 Workerman[_server.php] has been stopped
+2020-05-05 10:18:59 pid:688781 Workerman[_server.php] start in DEBUG mode
+2020-05-05 10:19:13 pid:688781 Workerman[_server.php] stopping ...
+2020-05-05 10:19:13 pid:688781 Workerman[_server.php] has been stopped
+2020-05-05 10:32:12 pid:690544 Workerman[_server.php] start in DEBUG mode
