@@ -1,6 +1,15 @@
 # PHP Gmail
 Servicio http para enviar mails a traves de gmail.
 
+## Directorios
+
+Crear los siguientes directorios en la raiz del proyecto.
+
+```
+mkdir credenciales
+mkdir tokens
+```
+
 ## Crear credenciales
 
 > https://developers.google.com/gmail/api/quickstart/php
