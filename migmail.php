@@ -157,8 +157,8 @@ class MiGmail{
             $c=[];
         }
 
-        echo "\n Enviando a ".$email;
-        $this->sendlog($email,$post['d']);
+        echo "\n Enviando desde ".$email." a ".$post['d'];
+        $this->sendlog($post['d'],$email);
 
         return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre);
 
