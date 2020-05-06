@@ -1,5 +1,11 @@
 <?php
+/**
+ * Clase principal para gestionar el mail
+ * 
+ * @author JosAlba
+ */
 
+//Comprobamos si existe la clase "PHPMailer", sino la incluimos
 if (!class_exists('PHPMailer')) {
     include(__DIR__.'/phpmail.php');
 }
