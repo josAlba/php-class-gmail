@@ -15,7 +15,17 @@ if (!class_exists('PHPMailer')) {
  */
 class MiGmail{
 
+    /**
+     * Almacena la ruta de la credencial
+     * @access public
+     * @var string
+     */
     public $credencial;
+    /**
+     * Almacena la ruta del token
+     * @access public
+     * @var string
+     */
     public $token;
 
     public function __construct($credencial='credentials.json',$token='token.json'){
@@ -78,7 +88,17 @@ class MiGmail{
         }
         return $client;
     }
-
+    /**
+     * Envia el mail
+     * @access public
+     * @param string $asunto Asunto del mail
+     * @param string $cuerpo Cuerpo del mensaje ( html )
+     * @param string $email Email del remitente ( from )
+     * @param array $destinatario Destinatarios del mail ( to )
+     * @param array $copia Personas en copia en el mail
+     * @param string $nombre Nombre del remitente
+     * @return int Indica si habido algun error.
+     */
     public function sendMail($asunto="",$cuerpo="",$email="",$destinatario=[],$copia=[],$nombre=""){
 
         $client     = $this->getClient();
@@ -120,7 +140,12 @@ class MiGmail{
         return $r;
 
     }
-
+    /**
+     * Valida los datos del post
+     * @access public
+     * @param array $post Datos del formulario
+     * @return int Valor arrastrado del envio del mail.
+     */
     public function validateANDsend($post){
 
         $asunto         ='';
@@ -169,7 +194,12 @@ class MiGmail{
         return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre);
 
     }
-
+    /**
+     * Almacena un log de correos eviados
+     * @access private
+     * @param string $mail Direccion del envio ( to )
+     * @param string $desde Direccion remitente ( from )
+     */
     private function sendlog($mail,$desde){
         $ddf = fopen('send.log','a');
         fwrite($ddf,"[".date("r")."] Enviado mail de $desde a $mail\r\n");
