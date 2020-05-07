@@ -1,11 +1,14 @@
 <?php
+/**
+ * Creamos un nuevo token a traves de la credencial
+ */
 
-
-
+//Comprobamos que se esta ejecutando desde una consola.
 if (php_sapi_name() != 'cli') {
-    throw new Exception('This application must be run on the command line.');
+    throw new Exception('Esta aplicación debe ejecutarse en la línea de comando.');
 }
 
+//Comprobamos que se le pase un parametro para configurar las peticiones.
 if(!isset($argv[1])){
     echo "\n Error indique el usuario";
     echo "\n php _newtoken.php {nombre}";
@@ -13,6 +16,7 @@ if(!isset($argv[1])){
     exit();   
 }
 
+//Recuperamos los datos pasados por consola.
 $us = $argv[1];
 
 $cc1=$us.'.credentials.json';
