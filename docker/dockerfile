@@ -1,0 +1,25 @@
+#Contenedor para ejecutar el microservicio.
+FROM ubuntu:20.04
+
+RUN apt-get update
+#Instalar php
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get install -y php php-cli php-curl
+#Instalar git
+RUN apt-get install -y git
+
+#Download git
+RUN mkdir /gmail
+RUN chmod 777 -R /gmail
+RUN git clone https://github.com/josAlba/php-class-gmail.git /gmail
+#Creamos las carpetas
+RUN mkdir /gmail/credenciales
+RUN mkdir /gmail/tokens
+#Inciamos el servidor
+#RUN php /gmail/_server.php start -d
+#Conectamos los volumenes
+
+#Conectamos el puerto
+EXPOSE 8020
+
+CMD cd /gmail && git pull && php _server.php start
