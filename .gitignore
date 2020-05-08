@@ -1,4 +1,4 @@
-**/tokens
-**/credenciales
+/tokens/
+/credenciales/
 *.log
 /.vscode/
