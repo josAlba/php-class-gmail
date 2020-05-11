@@ -115,7 +115,11 @@ class MiGmail{
                 $mail->AddAddress($destinatario[$i]);
             }
             if(count($copia)>0){
-                $mail->cc = $copia;
+
+                for($i=0;$i<count($copia);$i++){
+                    $mail->addCC($copia[$i]);
+                }
+               
             }
             
             //$mail->AddReplyTo($copia[$i]); Responder a ..
