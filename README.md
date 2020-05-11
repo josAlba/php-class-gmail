@@ -3,7 +3,7 @@ Servicio http para enviar mails a traves de gmail.
 
 ## Directorios
 
-Crear los siguientes directorios en la raiz del proyecto.
+Crear los siguientes directorios en la raiz del proyecto o ejecuta install.sh
 
 ```
 mkdir credenciales
@@ -13,10 +13,10 @@ mkdir tokens
 ## Configurar el servidor
 
 Modificar conf.json asignando la ip local y el puerto que quereis usar.
-
+> Si se establece como 0.0.0.0 usara cualquier ip del servidor.
 ```
 {
-    "ip": "10.0.3.247",
+    "ip": "0.0.0.0",
     "puerto": "8020",
     "hilos": 4
 }
@@ -38,6 +38,16 @@ php _newtoken.php {nombre}
 ```
 
 Esto generara un {nombre}.token.json en el directorio "tokens"
+
+## Docker
+En la carpeta docker tenemos dockerfile para crear una imagen necesaria para usar el microservicio.
+```
+#Crear imagen
+docker build --tag gmail:1.0
+#Crear contenedor
+sudo docker run -d -p 8020:8020 -v {local}:/gmail/credenciales -v {local}:/gmail/tokens --name gmail gmail:1.0
+
+```
 
 ## Iniciar el servicio
 
@@ -101,3 +111,4 @@ Hay que pasar "send" por GET y el contenido del correo por POST
 
 #### GET
 - send = Indica que es un mail
+
