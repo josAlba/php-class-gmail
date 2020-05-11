@@ -115,11 +115,10 @@ class MiGmail{
                 $mail->AddAddress($destinatario[$i]);
             }
             if(count($copia)>0){
-                for($i=0;$i<count($copia);$i++){
-                    $mail->AddReplyTo($copia[$i]);
-                }
+                $mail->cc = $copia;
             }
             
+            //$mail->AddReplyTo($copia[$i]); Responder a ..
             $mail->isHTML(true);
             $mail->Subject  = $asunto;
             $mail->Body     = $cuerpo;
