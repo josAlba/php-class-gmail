@@ -99,7 +99,7 @@ class MiGmail{
      * @param string $nombre Nombre del remitente
      * @return int Indica si habido algun error.
      */
-    public function sendMail($asunto="",$cuerpo="",$email="",$destinatario=[],$copia=[],$nombre=""){
+    public function sendMail($asunto="",$cuerpo="",$email="",$destinatario=[],$copia=[],$nombre="",$responder=""){
 
         $client     = $this->getClient();
         $service    = new Google_Service_Gmail($client);
@@ -121,8 +121,11 @@ class MiGmail{
                 }
                
             }
+
+            if($responder!=''){
+                $mail->AddReplyTo($responder);
+            }
             
-            //$mail->AddReplyTo($copia[$i]); Responder a ..
             $mail->isHTML(true);
             $mail->Subject  = $asunto;
             $mail->Body     = $cuerpo;
@@ -157,6 +160,7 @@ class MiGmail{
         $destinatario   =[];
         $copia          =[];
         $nombre         ='';
+        $responder      ='';
 
         if(
             !isset($post['a']) ||
@@ -191,10 +195,14 @@ class MiGmail{
             $c=[];
         }
 
+        if(isset($post['r'])){
+            $responder=$post['r'];
+        }
+
         echo "\n Enviando desde ".$email." a ".$post['d'];
         $this->sendlog($post['d'],$email);
 
-        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre);
+        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre,$responder);
 
     }
     /**
