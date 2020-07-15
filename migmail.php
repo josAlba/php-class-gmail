@@ -99,7 +99,7 @@ class MiGmail{
      * @param string $nombre Nombre del remitente
      * @return int Indica si habido algun error.
      */
-    public function sendMail($asunto="",$cuerpo="",$email="",$destinatario=[],$copia=[],$nombre="",$responder=""){
+    public function sendMail($asunto="",$cuerpo="",$email="",$destinatario=[],$copia=[],$nombre="",$responder="",$file=[]){
 
         $client     = $this->getClient();
         $service    = new Google_Service_Gmail($client);
@@ -124,6 +124,27 @@ class MiGmail{
 
             if($responder!=''){
                 $mail->AddReplyTo($responder);
+            }
+
+            if(count($file)!=0){
+
+                $adjunto=true;
+                for($i=0;$i<count($file);$i++){
+
+                    if(!isset($file[$i]['url'])){
+                        $adjunto=false;
+                    }
+                    if(!isset($file[$i]['name'])){
+                        $adjunto=false;
+                    }
+
+                    if($adjunto==true){
+
+                        $mail->addAttachment($file[$i]['url'],$file[$i]['name']);
+
+                    }
+                }
+
             }
             
             $mail->isHTML(true);
@@ -199,10 +220,27 @@ class MiGmail{
             $responder=$post['r'];
         }
 
+        $adjuntos=[];
+        if(isset($post['f'])){
+            $archivosADJ=$post['f'];
+
+            $exADJ = explode(',',$archivosADJ);
+            for($i=0;$i<count($exADJ);$i++){
+
+                $tmpADJ = explode(';',$exADJ[$i]);
+
+                $adjunto[]=array(
+                    'file'=>$tmpADJ[0],
+                    'name'=>$tmpADJ[1]
+                );
+
+            }
+        }
+
         echo "\n Enviando desde ".$email." a ".$post['d'];
         $this->sendlog($post['d'],$email);
 
-        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre,$responder);
+        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre,$responder,$adjuntos);
 
     }
     /**

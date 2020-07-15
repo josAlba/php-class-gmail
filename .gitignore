@@ -2,3 +2,5 @@
 /credenciales/
 *.log
 /.vscode/
+/test/
+/vendor/workerman/*.log
