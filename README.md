@@ -107,6 +107,7 @@ Hay que pasar "send" por GET y el contenido del correo por POST
 - c = Emails en copia ( se puede añadir más de uno separandolos por , )
 - n = Nombre
 - r = Responde a ...
+- f = Archivo adjunto ( {url};{nombre} ejemplo http://fi.com/test.pdf;test.pdf )
 
 > Para pasar el cuerpo en html de forma corecta si se hace desde php es recomendado usar la funcion urlencode() , de esta manera el html se enviara sin problemas. ( debe estar codificado para url ).
 
