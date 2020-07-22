@@ -131,7 +131,7 @@ class MiGmail{
                 $adjunto=true;
                 for($i=0;$i<count($file);$i++){
 
-                    if(!isset($file[$i]['url'])){
+                    if(!isset($file[$i]['file'])){
                         $adjunto=false;
                     }
                     if(!isset($file[$i]['name'])){
@@ -140,8 +140,7 @@ class MiGmail{
 
                     if($adjunto==true){
 
-                        $mail->addAttachment($file[$i]['url'],$file[$i]['name']);
-
+                        $mail->addAttachment($file[$i]['file'],$file[$i]['name']);
                     }
                 }
 
@@ -229,8 +228,20 @@ class MiGmail{
 
                 $tmpADJ = explode(';',$exADJ[$i]);
 
+                $hoy = date("Y-m-d H:i:s");
+                $archivoTemporal=__DIR__.'/tmp/'.md5($hoy).'-'.$tmpADJ[1];
+
+                $pos = strpos($tmpADJ[0], 'http');
+                if ($pos === false) {
+                    copy($tmpADJ[0],$archivoTemporal);
+                }else{
+                    shell_exec(' wget -O '.$archivoTemporal.' '.$tmpADJ[0]);
+                }
+                
+                echo "\n $archivoTemporal \n";
+
                 $adjunto[]=array(
-                    'file'=>$tmpADJ[0],
+                    'file'=>$archivoTemporal,
                     'name'=>$tmpADJ[1]
                 );
 
@@ -240,7 +251,7 @@ class MiGmail{
         echo "\n Enviando desde ".$email." a ".$post['d'];
         $this->sendlog($post['d'],$email);
 
-        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre,$responder,$adjuntos);
+        return $this->sendMail($asunto,$cuerpo,$email,$destinatario,$copia,$nombre,$responder,$adjunto);
 
     }
     /**

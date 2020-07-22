@@ -6,7 +6,7 @@ RUN apt-get update
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get install -y php php-cli php-curl
 #Instalar git
-RUN apt-get install -y git
+RUN apt-get install -y git wget
 
 #Download git
 RUN mkdir /gmail

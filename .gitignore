@@ -1,5 +1,7 @@
 /tokens/
 /credenciales/
+/docker/tokens/
+/docker/credenciales/
 *.log
 /.vscode/
 /test/
