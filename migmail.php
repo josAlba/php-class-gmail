@@ -238,12 +238,13 @@ class MiGmail{
                     shell_exec(' wget -O '.$archivoTemporal.' '.$tmpADJ[0]);
                 }
                 
-                echo "\n $archivoTemporal \n";
+                if(file_exists($archivoTemporal)){
 
-                $adjunto[]=array(
-                    'file'=>$archivoTemporal,
-                    'name'=>$tmpADJ[1]
-                );
+                    $adjunto[]=array(
+                        'file'=>$archivoTemporal,
+                        'name'=>$tmpADJ[1]
+                    );
+                }
 
             }
         }
